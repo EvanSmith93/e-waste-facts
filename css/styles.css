@@ -17,7 +17,7 @@
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  background-image: linear-gradient( rgba(0, 5, 0, 0.45), rgba(0, 5, 0, 0.45) ), url('/assets/electronic-waste.jpeg'); 
+  background-image: linear-gradient( rgba(0, 5, 0, 0.45), rgba(0, 5, 0, 0.45) ), url('https://evansmith93.github.io/e-waste-facts/assets/electronic-waste.jpeg');
   background-attachment: fixed;
   background-repeat: no-repeat; 
   width: 100vw; 
