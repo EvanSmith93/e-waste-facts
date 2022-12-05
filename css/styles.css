@@ -21,7 +21,7 @@
   width: 100vw; 
   height: 100vh; 
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://evansmith93.github.io/e-waste-facts/assets/iphone.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/iphone.webp');
   background-attachment: fixed;
   background-repeat: no-repeat; 
   background-size: cover;
@@ -44,7 +44,7 @@
   bottom: 0;
   right: 0;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://evansmith93.github.io/e-waste-facts/assets/ewaste.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/ewaste.jpeg');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat; 
