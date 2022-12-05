@@ -33,15 +33,25 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-myID = document.getElementById("arrow");
+// My own custom javascript
 
-var myScrollFunc = function() {
-var y = window.scrollY;
-if (y <= 60) {
-    myID.style.visibility = "visible";
-} else {
-    myID.style.visibility = "hidden";
-}
+arrow = document.getElementById("arrow");
+
+var showHideArrow = function() {
+    var y = window.scrollY;
+    if (y <= 60) {
+        arrow.style.visibility = "visible";
+    } else {
+        arrow.style.visibility = "hidden";
+    }
 };
 
-window.addEventListener("scroll", myScrollFunc);
+var fadeImages = function() {
+    var y = window.scrollY;
+
+    var styleElem = document.head.appendChild(document.createElement("style"));
+    styleElem.innerHTML = ".header-end-image::before {  opacity: " + ((y - 10) / 150) + "; }";
+};
+
+window.addEventListener("scroll", showHideArrow);
+window.addEventListener("scroll", fadeImages);

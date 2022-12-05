@@ -16,16 +16,43 @@
 @font-face { font-family: Rocko; src: url('../fonts/rocko/RockoFLF.ttf'); } 
 @font-face { font-family: Rocko; font-weight: bold; src: url('../fonts/rocko/RockoFLF-Bold.ttf'); } 
 
-.header-image {
+.header-start-image {
+  display: flex; 
+  width: 100vw; 
+  height: 100vh; 
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/iphone.webp');
+  background-attachment: fixed;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.header-end-image {
+  position: relative;
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  background-image: linear-gradient( rgba(0, 8, 0, 0.55), rgba(0, 8, 0, 0.55) ), url('https://evansmith93.github.io/e-waste-facts/assets/electronic-waste.jpeg');
+  width: 100vw; 
+  height: 100vh;
+}
+
+.header-end-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/ewaste.jpeg');
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat; 
-  width: 100vw; 
-  height: 100vh; 
-  background-size: cover;
+  opacity: 0;
+}
+
+.header-text-div {
+  position: relative;
 }
 
 .title-text {
@@ -66,6 +93,27 @@ img {
   margin-bottom: 0rem !important;
 }
 
+#how-to-help {
+  position: relative;
+}
+
+#how-to-help::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('/assets/android.webp');
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+.how-to-help-content {
+  position: relative;
+}
+
 .resource-div {
   display: flex;
   justify-content: center;
@@ -98,6 +146,10 @@ img {
     color: #ffffff;
     background-color: #00663d;
   }
+}
+
+.source::after {
+  content: attr(href);
 }
 
 /* Bootstrap CSS */
