@@ -39,7 +39,7 @@ arrow = document.getElementById("arrow");
 
 var showHideArrow = function() {
     var y = window.scrollY;
-    if (y <= 60) {
+    if (y <= 65) {
         arrow.style.visibility = "visible";
     } else {
         arrow.style.visibility = "hidden";
@@ -50,7 +50,7 @@ var fadeImages = function() {
     var y = window.scrollY;
 
     var styleElem = document.head.appendChild(document.createElement("style"));
-    styleElem.innerHTML = ".header-end-image::before {  opacity: " + ((y - 10) / 150) + "; }";
+    styleElem.innerHTML = "#header-end-image::before {  opacity: " + ((y - 10) / 150) + "; }";
 };
 
 window.addEventListener("scroll", showHideArrow);

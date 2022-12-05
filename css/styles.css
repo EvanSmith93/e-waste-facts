@@ -16,7 +16,7 @@
 @font-face { font-family: Rocko; src: url('../fonts/rocko/RockoFLF.ttf'); } 
 @font-face { font-family: Rocko; font-weight: bold; src: url('../fonts/rocko/RockoFLF-Bold.ttf'); } 
 
-.header-start-image {
+#header-start-image {
   display: flex; 
   width: 100vw; 
   height: 100vh; 
@@ -27,7 +27,7 @@
   background-size: cover;
 }
 
-.header-end-image {
+#header-end-image {
   position: relative;
   display: flex; 
   justify-content: center; 
@@ -36,7 +36,7 @@
   height: 100vh;
 }
 
-.header-end-image::before {
+#header-end-image::before {
   content: "";
   position: absolute;
   top: 0;
@@ -49,10 +49,6 @@
   background-attachment: fixed;
   background-repeat: no-repeat; 
   opacity: 0;
-}
-
-.header-text-div {
-  position: relative;
 }
 
 .title-text {
@@ -93,10 +89,6 @@ img {
   margin-bottom: 0rem !important;
 }
 
-#how-to-help {
-  position: relative;
-}
-
 #how-to-help::before {
   content: "";
   position: absolute;
@@ -108,10 +100,6 @@ img {
   background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), url('../assets/android.webp');
   background-size: cover;
   background-repeat: no-repeat; 
-}
-
-.how-to-help-content {
-  position: relative;
 }
 
 .resource-div {
